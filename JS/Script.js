@@ -5,7 +5,7 @@ $(document).ready(function() {
     let currentIndex = 0;
   
     // Cambiar de item cuando se hace clic en el carrusel
-    carousel.on('click', function() {
+    carousel.on('event', function() {
       currentIndex = (currentIndex + 1) % items.length;
       const displacement = -currentIndex * items.width();
       carousel.css('transform', `translateX(${displacement}px)`);
